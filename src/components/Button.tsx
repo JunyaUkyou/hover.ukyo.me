@@ -1,12 +1,9 @@
-import { type JSX } from "react";
-
 type Props = {
   style: {
     id: number;
     title: string;
     description: string;
     gradient: string;
-    icon: JSX.Element;
   };
 };
 
@@ -28,9 +25,6 @@ export const Button = ({ style }: Props) => {
         {/* Top row: number + icon */}
         <div className="flex items-center justify-between mb-5">
           <div className="card-number">{String(style.id).padStart(2, "0")}</div>
-          <div className="text-green-accent opacity-50 group-hover:opacity-100 transition-opacity duration-300">
-            {style.icon}
-          </div>
         </div>
 
         {/* Title */}
