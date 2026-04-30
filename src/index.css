@@ -1,1 +1,138 @@
 @import "tailwindcss";
+
+/* Google Fonts: Inter (SoDoSans substitute) */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* ===== Design System tokens from DESIGN.md ===== */
+@theme {
+  /* --- Color palette --- */
+  --color-starbucks-green: #006241;
+  --color-green-accent: #00754a;
+  --color-house-green: #1e3932;
+  --color-green-uplift: #2b5148;
+  --color-green-light: #d4e9e2;
+
+  --color-gold: #cba258;
+  --color-gold-light: #dfc49d;
+  --color-gold-lightest: #faf6ee;
+
+  --color-neutral-warm: #f2f0eb;
+  --color-ceramic: #edebe9;
+  --color-neutral-cool: #f9f9f9;
+
+  --color-text-black: rgba(0, 0, 0, 0.87);
+  --color-text-black-soft: rgba(0, 0, 0, 0.58);
+
+  /* --- Spacing scale --- */
+  --spacing-s1: 0.25rem;
+  --spacing-s2: 0.5rem;
+  --spacing-s3: 1rem;
+  --spacing-s4: 1.5rem;
+  --spacing-s5: 2rem;
+  --spacing-s6: 2.5rem;
+  --spacing-s7: 3rem;
+  --spacing-s8: 3.5rem;
+  --spacing-s9: 4rem;
+
+  /* --- Border radius --- */
+  --radius-card: 12px;
+  --radius-pill: 50px;
+
+  /* --- Font family --- */
+  --font-sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* --- Shadows --- */
+  --shadow-card: 0px 0px 0.5px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.24);
+  --shadow-card-hover: 0px 2px 8px 0px rgba(0, 0, 0, 0.18),
+    0px 4px 16px 0px rgba(0, 0, 0, 0.12);
+  --shadow-nav: 0 1px 3px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.06),
+    0 0 2px rgba(0, 0, 0, 0.07);
+}
+
+/* ===== Base styles ===== */
+html {
+  font-family: var(--font-sans);
+  letter-spacing: -0.01em;
+  color: var(--color-text-black);
+  background-color: var(--color-neutral-warm);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* ===== Card hover animation ===== */
+.card-hover {
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+}
+.card-hover:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+/* ===== Pill button ===== */
+.btn-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-pill);
+  padding: 7px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+.btn-pill:active {
+  transform: scale(0.95);
+}
+.btn-pill-primary {
+  background: var(--color-green-accent);
+  color: #fff;
+  border: 1px solid var(--color-green-accent);
+}
+.btn-pill-primary:hover {
+  background: var(--color-starbucks-green);
+  border-color: var(--color-starbucks-green);
+}
+.btn-pill-outlined {
+  background: transparent;
+  color: var(--color-green-accent);
+  border: 1px solid var(--color-green-accent);
+}
+.btn-pill-outlined:hover {
+  background: var(--color-green-accent);
+  color: #fff;
+}
+
+/* ===== Image fade-in ===== */
+.img-fade {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+.img-fade.loaded {
+  opacity: 1;
+}
+
+/* ===== Card number badge ===== */
+.card-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-green-accent);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
