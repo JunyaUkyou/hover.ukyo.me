@@ -1,10 +1,7 @@
+import { type HoverStyles } from "@/hoverCollection";
+
 type Props = {
-  style: {
-    id: number;
-    title: string;
-    description: string;
-    gradient: string;
-  };
+  style: HoverStyles;
 };
 
 export const Button = ({ style }: Props) => {
