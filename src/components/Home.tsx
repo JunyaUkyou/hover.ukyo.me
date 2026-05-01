@@ -1,4 +1,5 @@
 import Logo from "@/assets/GitHub_Invertocat_Black.svg?react";
+import { ScrollBadge } from "@/components/ScrollBadge";
 
 export const Home = () => {
   return (
@@ -7,18 +8,10 @@ export const Home = () => {
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-green-light opacity-40" />
         <div className="absolute -bottom-16 -left-16 w-64 h-64 rounded-full bg-ceramic opacity-60" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-green-light opacity-15" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150] h-[150] rounded-full bg-green-light opacity-15" />
       </div>
 
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-[420px] px-6 py-16 md:py-24">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-8 rounded-pill bg-white/70 backdrop-blur-sm border border-green-light shadow-card">
-          <span className="block w-2 h-2 rounded-full bg-green-accent animate-pulse" />
-          <span className="text-xs font-semibold tracking-tight text-house-green uppercase">
-            CSS Hover Collection
-          </span>
-        </div>
-
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-[105] px-6 py-16 md:py-24">
         {/* Heading */}
         <h1 className="text-starbucks-green text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-center leading-tight max-w-3xl">
           Hover Button Styles
@@ -37,7 +30,7 @@ export const Home = () => {
             コレクションを見る
           </a>
           <a
-            href="https://github.com/JunyaUkyworker"
+            href="https://github.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-pill btn-pill-outlined inline-flex items-center gap-2"
@@ -48,24 +41,7 @@ export const Home = () => {
         </div>
 
         {/* Scroll hint */}
-        <div className="mt-12 flex flex-col items-center gap-1 text-text-black-soft/50 animate-bounce">
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            className="text-green-accent"
-          >
-            <path
-              d="M10 3v14m0 0l-5-5m5 5l5-5"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-          <span className="text-[11px] tracking-wide font-medium">SCROLL</span>
-        </div>
+        <ScrollBadge />
       </div>
     </section>
   );
