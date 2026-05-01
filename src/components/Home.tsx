@@ -11,14 +11,6 @@ export const Home = () => {
       </div>
 
       <div className="relative z-10 flex flex-col items-center justify-center min-h-[420px] px-6 py-16 md:py-24">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-8 rounded-pill bg-white/70 backdrop-blur-sm border border-green-light shadow-card">
-          <span className="block w-2 h-2 rounded-full bg-green-accent animate-pulse" />
-          <span className="text-xs font-semibold tracking-tight text-house-green uppercase">
-            CSS Hover Collection
-          </span>
-        </div>
-
         {/* Heading */}
         <h1 className="text-starbucks-green text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-center leading-tight max-w-3xl">
           Hover Button Styles
