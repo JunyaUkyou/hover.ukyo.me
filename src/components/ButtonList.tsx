@@ -1,5 +1,5 @@
 import { Button } from "@/components/Button";
-import { hoverStyles } from "@/hoverCollection";
+import { hoverStyles } from "@/components/hoverCollection";
 
 export const ButtonList = () => {
   return (
