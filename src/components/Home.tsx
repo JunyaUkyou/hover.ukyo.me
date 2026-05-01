@@ -8,7 +8,7 @@ export const Home = () => {
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-green-light opacity-40" />
         <div className="absolute -bottom-16 -left-16 w-64 h-64 rounded-full bg-ceramic opacity-60" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150] h-[150] rounded-full bg-green-light opacity-15" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 rounded-full bg-green-light opacity-15" />
       </div>
 
       <div className="relative z-10 flex flex-col items-center justify-center min-h-[105] px-6 py-16 md:py-24">
