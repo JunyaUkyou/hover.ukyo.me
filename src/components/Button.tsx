@@ -8,7 +8,7 @@ export const Button = ({ style }: Props) => {
   return (
     <article
       key={style.id}
-      className="card-hover group relative bg-white rounded-card shadow-card overflow-hidden cursor-pointer"
+      className="card-hover group bg-white rounded-card shadow-card overflow-hidden cursor-pointer"
       role="link"
       tabIndex={0}
     >

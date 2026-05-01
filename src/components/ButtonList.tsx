@@ -5,7 +5,7 @@ export const ButtonList = () => {
   return (
     <section
       id="buttons"
-      className="relative bg-neutral-warm py-16 md:py-24 px-4 md:px-6 lg:px-10"
+      className=" bg-neutral-warm py-16 md:py-24 px-4 md:px-6 lg:px-10"
     >
       {/* Section header */}
       <div className="max-w-7xl mx-auto mb-12 md:mb-16">
