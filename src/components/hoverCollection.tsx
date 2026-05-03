@@ -5,6 +5,7 @@ import { Hover1 } from "@/components/Hover1";
 import { Hover2 } from "@/components/Hover2";
 import { Hover3 } from "@/components/Hover3";
 import { Hover4 } from "@/components/Hover4";
+import { Hover5 } from "@/components/Hover5";
 
 export type HoverStyles = {
   id: number;
@@ -48,7 +49,7 @@ export const hoverStyles: HoverStyles[] = [
     title: "Ripple",
     description: "クリック位置から波紋が広がるマテリアルデザイン風エフェクト",
     gradient: "from-starbucks-green to-house-green",
-    preview: <HoverTmp gradient="from-house-green to-green-uplift" />,
+    preview: <Hover5 />,
   },
   {
     id: 6,
