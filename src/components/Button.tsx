@@ -39,7 +39,7 @@ export const Button = ({ style }: Props) => {
 
         {/* Footer link */}
         <div className="flex items-center justify-between text-green-accent text-sm font-medium">
-          <span className="underline-offset-4">詳細を見る</span>
+          <span className="underline-offset-4">Details</span>
           <svg
             width="18"
             height="18"

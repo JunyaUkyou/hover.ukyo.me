@@ -15,7 +15,7 @@ export const hoverStyles: HoverStyles[] = [
   {
     id: 1,
     title: "Fill Slide",
-    description: "背景色が横方向にスライドして塗りつぶされるエフェクト",
+    description: "Fills the background on hover.",
     gradient: "from-green-accent to-starbucks-green",
     preview: <Hover1 />,
   },
