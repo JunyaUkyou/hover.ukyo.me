@@ -2,6 +2,7 @@ import { type JSX } from "react";
 
 import { HoverTmp } from "@/components/HoverTmp";
 import { Hover1 } from "@/components/Hover1";
+import { Hover2 } from "@/components/Hover2";
 
 export type HoverStyles = {
   id: number;
@@ -15,16 +16,16 @@ export const hoverStyles: HoverStyles[] = [
   {
     id: 1,
     title: "Fill Slide",
-    description: "Fills the background on hover.",
+    description: "Fills the background on hover",
     gradient: "from-green-accent to-starbucks-green",
     preview: <Hover1 />,
   },
   {
     id: 2,
     title: "Scale Up",
-    description: "ホバー時にボタンがスケールアップして浮き上がるエフェクト",
+    description: "Fills the background on hover",
     gradient: "from-house-green to-green-uplift",
-    preview: <HoverTmp gradient="from-house-green to-green-uplift" />,
+    preview: <Hover2 />,
   },
   {
     id: 3,
