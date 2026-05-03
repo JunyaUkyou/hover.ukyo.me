@@ -3,6 +3,7 @@ import { type JSX } from "react";
 import { HoverTmp } from "@/components/HoverTmp";
 import { Hover1 } from "@/components/Hover1";
 import { Hover2 } from "@/components/Hover2";
+import { Hover3 } from "@/components/Hover3";
 
 export type HoverStyles = {
   id: number;
@@ -32,7 +33,7 @@ export const hoverStyles: HoverStyles[] = [
     title: "Border Draw",
     description: "ボーダーがアニメーションしながら描画されるエフェクト",
     gradient: "from-green-accent to-green-light",
-    preview: <HoverTmp gradient="from-house-green to-green-uplift" />,
+    preview: <Hover3 />,
   },
   {
     id: 4,
