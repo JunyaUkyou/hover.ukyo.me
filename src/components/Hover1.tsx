@@ -6,7 +6,7 @@ export const Hover1 = () => {
           className="no-underline  py-2 px-5 relative block group-hover:before:rotate-0
           text-white
           text-sm
-          bg-starbucks-green
+          bg-gold
         z-0
         rounded-full
         overflow-hidden
@@ -14,7 +14,7 @@ export const Hover1 = () => {
         before:absolute
         before:left-0
         before:top-0
-        before:bg-gold
+        before:bg-starbucks-green
         before:w-full
         before:h-full
         before:-z-10
