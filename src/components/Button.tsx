@@ -1,4 +1,4 @@
-import { type HoverStyles } from "@/hoverCollection";
+import { type HoverStyles } from "@/components/hoverCollection";
 
 type Props = {
   style: HoverStyles;
@@ -8,13 +8,13 @@ export const Button = ({ style }: Props) => {
   return (
     <article
       key={style.id}
-      className="card-hover group bg-white rounded-card shadow-card overflow-hidden cursor-pointer"
+      className="bg-white rounded-card shadow-card overflow-hidden cursor-pointer"
       role="link"
       tabIndex={0}
     >
       {/* Gradient accent bar */}
       <div
-        className={`h-1.5 bg-linear-to-r ${style.gradient} transition-all duration-300 group-hover:h-2`}
+        className={`h-1.5 bg-linear-to-r ${style.gradient} transition-all duration-300`}
       />
 
       {/* Card content */}
@@ -25,7 +25,7 @@ export const Button = ({ style }: Props) => {
         </div>
 
         {/* Title */}
-        <h3 className="text-text-black text-lg font-semibold tracking-tight mb-2 group-hover:text-starbucks-green transition-colors duration-300">
+        <h3 className="text-text-black text-lg font-semibold tracking-tight mb-2 ">
           {style.title}
         </h3>
 
@@ -35,25 +35,17 @@ export const Button = ({ style }: Props) => {
         </p>
 
         {/* Preview area */}
-        <div className="flex items-center justify-center py-5 rounded-lg bg-neutral-warm/60 border border-ceramic mb-5">
-          <div
-            className={`px-5 py-2 rounded-pill text-xs font-semibold text-white bg-linear-to-r ${style.gradient} shadow-sm transition-transform duration-200 group-hover:scale-105`}
-          >
-            Hover me
-          </div>
-        </div>
+        {style.preview}
 
         {/* Footer link */}
         <div className="flex items-center justify-between text-green-accent text-sm font-medium">
-          <span className="group-hover:underline underline-offset-4">
-            詳細を見る
-          </span>
+          <span className="underline-offset-4">Details</span>
           <svg
             width="18"
             height="18"
             viewBox="0 0 18 18"
             fill="none"
-            className="transform transition-transform duration-300 group-hover:translate-x-1"
+            className="transform transition-transform duration-300"
           >
             <path
               d="M6.75 4.5L11.25 9L6.75 13.5"
