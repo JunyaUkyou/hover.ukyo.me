@@ -1,9 +1,8 @@
 export const Hover3 = () => {
   return (
-    <div className="flex justify-center items-center py-5 rounded-lg bg-neutral-warm/60 border border-ceramic mb-5">
-      <div className="group">
-        <a
-          className="no-underline  py-2 px-5 relative block group-hover:before:rotate-x-0
+    <div className="group cursor-pointer">
+      <a
+        className="no-underline  py-2 px-5 relative block group-hover:before:rotate-x-0
           group-hover:after:rotate-y-0
           text-white
           text-sm
@@ -34,10 +33,9 @@ export const Hover3 = () => {
         after:transition-all
         after:duration-700
         "
-        >
-          Hover Me
-        </a>
-      </div>
+      >
+        Hover Me
+      </a>
     </div>
   );
 };

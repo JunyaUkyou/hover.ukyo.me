@@ -1,9 +1,8 @@
 export const Hover2 = () => {
   return (
-    <div className="flex justify-center items-center py-5 rounded-lg bg-neutral-warm/60 border border-ceramic mb-5">
-      <div className="group">
-        <a
-          className="no-underline  py-2 px-5 relative block group-hover:before:translate-x-0
+    <div className="group cursor-pointer">
+      <a
+        className="no-underline  py-2 px-5 relative block group-hover:before:translate-x-0
           text-white
           text-sm
           bg-gold
@@ -22,10 +21,9 @@ export const Hover2 = () => {
         before:transition-[translate]
         before:duration-300
         "
-        >
-          Hover Me
-        </a>
-      </div>
+      >
+        Hover Me
+      </a>
     </div>
   );
 };
