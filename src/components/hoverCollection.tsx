@@ -6,6 +6,7 @@ import { Hover2 } from "@/components/Hover2";
 import { Hover3 } from "@/components/Hover3";
 import { Hover4 } from "@/components/Hover4";
 import { Hover5 } from "@/components/Hover5";
+import { Hover6 } from "@/components/Hover6";
 
 export type HoverStyles = {
   id: number;
@@ -56,7 +57,7 @@ export const hoverStyles: HoverStyles[] = [
     title: "Underline Reveal",
     description: "テキスト下にアンダーラインがスライドインするエフェクト",
     gradient: "from-green-uplift to-green-accent",
-    preview: <HoverTmp gradient="from-house-green to-green-uplift" />,
+    preview: <Hover6 />,
   },
   {
     id: 7,
