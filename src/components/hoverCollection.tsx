@@ -7,6 +7,7 @@ import { Hover3 } from "@/components/Hover3";
 import { Hover4 } from "@/components/Hover4";
 import { Hover5 } from "@/components/Hover5";
 import { Hover6 } from "@/components/Hover6";
+import { Hover7 } from "@/components/Hover7";
 
 export type HoverStyles = {
   id: number;
@@ -64,7 +65,7 @@ export const hoverStyles: HoverStyles[] = [
     title: "3D Press",
     description: "ホバーで浮き上がり、クリックで押し込まれる立体的なエフェクト",
     gradient: "from-house-green to-starbucks-green",
-    preview: <HoverTmp gradient="from-house-green to-green-uplift" />,
+    preview: <Hover7 />,
   },
   {
     id: 8,
