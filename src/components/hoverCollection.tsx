@@ -1,6 +1,5 @@
 import { type JSX } from "react";
 
-import { HoverTmp } from "@/components/HoverTmp";
 import { Hover1 } from "@/components/Hover1";
 import { Hover2 } from "@/components/Hover2";
 import { Hover3 } from "@/components/Hover3";
@@ -66,19 +65,5 @@ export const hoverStyles: HoverStyles[] = [
     description: "ホバーで浮き上がり、クリックで押し込まれる立体的なエフェクト",
     gradient: "from-house-green to-starbucks-green",
     preview: <Hover7 />,
-  },
-  {
-    id: 8,
-    title: "Gradient Shift",
-    description: "ホバー時にグラデーションの色が滑らかに変化するエフェクト",
-    gradient: "from-green-accent via-gold to-starbucks-green",
-    preview: <HoverTmp gradient="from-house-green to-green-uplift" />,
-  },
-  {
-    id: 9,
-    title: "Icon Slide",
-    description: "ホバー時にアイコンがスライドインして表示されるエフェクト",
-    gradient: "from-green-light to-green-accent",
-    preview: <HoverTmp gradient="from-house-green to-green-uplift" />,
   },
 ];

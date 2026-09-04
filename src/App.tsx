@@ -1,11 +1,11 @@
-import { Home } from "@/components/Home";
-import { ButtonList } from "@/components/ButtonList";
+import { HeroSection } from "@/components/HeroSection";
+import { MainSection } from "@/components/MainSection";
 
 export const App = () => {
   return (
     <>
-      <Home />
-      <ButtonList />
+      <HeroSection />
+      <MainSection />
     </>
   );
 };
