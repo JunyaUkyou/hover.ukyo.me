@@ -1,12 +1,9 @@
 import { Card } from "@/components/Card";
 import { hoverStyles } from "@/components/hoverCollection";
 
-export const ButtonList = () => {
+export const MainSection = () => {
   return (
-    <section
-      id="buttons"
-      className=" bg-neutral-warm px-4 md:px-6 lg:px-10 mt-12 md:mt-12"
-    >
+    <section className=" bg-neutral-warm px-4 md:px-6 lg:px-10 mt-12 md:mt-12">
       {/* Section header */}
       <div className="max-w-7xl mx-auto mb-12 md:mb-16">
         <div className="flex items-center">

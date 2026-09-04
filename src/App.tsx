@@ -1,11 +1,11 @@
 import { HeroSection } from "@/components/HeroSection";
-import { ButtonList } from "@/components/ButtonList";
+import { MainSection } from "@/components/MainSection";
 
 export const App = () => {
   return (
     <>
       <HeroSection />
-      <ButtonList />
+      <MainSection />
     </>
   );
 };
