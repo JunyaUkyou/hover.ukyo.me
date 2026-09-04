@@ -37,8 +37,8 @@ export const hoverStyles: HoverStyle[] = [
   },
   {
     id: 3,
-    title: "Border Draw",
-    description: "ボーダーがアニメーションしながら描画されるエフェクト",
+    title: "Spread Sweep",
+    description: "Spreads out from the center in all directions",
     gradient: "from-green-accent to-green-light",
     hoverClass: `
       overflow-hidden
