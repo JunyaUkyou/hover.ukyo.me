@@ -9,8 +9,8 @@ export type HoverStyle = {
 export const hoverStyles: HoverStyle[] = [
   {
     id: 1,
-    title: "Fill Slide",
-    description: "Fills the background on hover",
+    title: "Radial Sweep",
+    description: "Rotates right from the bottom-left corner",
     gradient: "from-green-accent to-starbucks-green",
     hoverClass: `
       overflow-hidden
