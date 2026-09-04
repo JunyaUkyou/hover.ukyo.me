@@ -1,10 +1,10 @@
-import { Home } from "@/components/Home";
+import { Hero } from "@/components/Hero";
 import { ButtonList } from "@/components/ButtonList";
 
 export const App = () => {
   return (
     <>
-      <Home />
+      <Hero />
       <ButtonList />
     </>
   );

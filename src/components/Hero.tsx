@@ -1,6 +1,6 @@
 import Logo from "@/assets/GitHub_Invertocat_Black.svg?react";
 
-export const Home = () => {
+export const Hero = () => {
   return (
     <section className="relative overflow-hidden bg-neutral-warm">
       {/* Decorative background shapes */}
