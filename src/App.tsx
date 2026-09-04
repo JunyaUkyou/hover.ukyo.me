@@ -1,10 +1,10 @@
-import { Hero } from "@/components/Hero";
+import { HeroSection } from "@/components/HeroSection";
 import { ButtonList } from "@/components/ButtonList";
 
 export const App = () => {
   return (
     <>
-      <Hero />
+      <HeroSection />
       <ButtonList />
     </>
   );
