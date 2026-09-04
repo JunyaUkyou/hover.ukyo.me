@@ -4,7 +4,7 @@ type Props = {
   style: HoverStyles;
 };
 
-export const Button = ({ style }: Props) => {
+export const Card = ({ style }: Props) => {
   return (
     <article
       key={style.id}

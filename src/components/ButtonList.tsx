@@ -1,4 +1,4 @@
-import { Button } from "@/components/Button";
+import { Card } from "@/components/Card";
 import { hoverStyles } from "@/components/hoverCollection";
 
 export const ButtonList = () => {
@@ -21,7 +21,7 @@ export const ButtonList = () => {
       {/* Card grid */}
       <div className="max-w-7xl mx-auto grid gap-6 md:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {hoverStyles.map((style, index) => (
-          <Button key={index} style={style} />
+          <Card key={index} style={style} />
         ))}
       </div>
     </section>
