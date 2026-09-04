@@ -38,26 +38,6 @@ export const Card = ({ style }: Props) => {
         <div className="flex justify-center items-center py-5 rounded-lg bg-neutral-warm/60 border border-ceramic mb-5">
           {style.preview}
         </div>
-
-        {/* Footer link */}
-        <div className="flex items-center justify-between text-green-accent text-sm font-medium">
-          <span className="underline-offset-4">Details</span>
-          <svg
-            width="18"
-            height="18"
-            viewBox="0 0 18 18"
-            fill="none"
-            className="transform transition-transform duration-300"
-          >
-            <path
-              d="M6.75 4.5L11.25 9L6.75 13.5"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </div>
       </div>
     </article>
   );
