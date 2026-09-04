@@ -1,7 +1,8 @@
-import { type HoverStyles } from "@/components/hoverCollection";
+import { BaseButton } from "@/components/BaseButton";
+import { type HoverStyle } from "@/components/hoverCollection";
 
 type Props = {
-  style: HoverStyles;
+  style: HoverStyle;
 };
 
 export const Card = ({ style }: Props) => {
@@ -36,7 +37,7 @@ export const Card = ({ style }: Props) => {
 
         {/* Preview area */}
         <div className="flex justify-center items-center py-5 rounded-lg bg-neutral-warm/60 border border-ceramic mb-5">
-          {style.preview}
+          <BaseButton hoverClass={style.hoverClass} />
         </div>
       </div>
     </article>
