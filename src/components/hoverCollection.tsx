@@ -9,8 +9,8 @@ export type HoverStyle = {
 export const hoverStyles: HoverStyle[] = [
   {
     id: 1,
-    title: "Fill Slide",
-    description: "Fills the background on hover",
+    title: "Radial Sweep",
+    description: "Rotates right from the bottom-left corner",
     gradient: "from-green-accent to-starbucks-green",
     hoverClass: `
       overflow-hidden
@@ -23,8 +23,8 @@ export const hoverStyles: HoverStyle[] = [
   },
   {
     id: 2,
-    title: "Scale Up",
-    description: "Fills the background on hover",
+    title: "Lateral Sweep",
+    description: "Sweep from left to right",
     gradient: "from-house-green to-green-uplift",
     hoverClass: `
       overflow-hidden
@@ -37,8 +37,8 @@ export const hoverStyles: HoverStyle[] = [
   },
   {
     id: 3,
-    title: "Border Draw",
-    description: "ボーダーがアニメーションしながら描画されるエフェクト",
+    title: "Spread Sweep",
+    description: "Spreads out from the center in all directions",
     gradient: "from-green-accent to-green-light",
     hoverClass: `
       overflow-hidden
@@ -53,8 +53,8 @@ export const hoverStyles: HoverStyle[] = [
   },
   {
     id: 4,
-    title: "Glow Pulse",
-    description: "ホバー時にボタンの周囲がやわらかく光るエフェクト",
+    title: "Vertical Spread Sweep",
+    description: "Spreads out vertically from the center.",
     gradient: "from-gold to-gold-light",
     hoverClass: `
       overflow-hidden
@@ -66,8 +66,8 @@ export const hoverStyles: HoverStyle[] = [
   },
   {
     id: 5,
-    title: "Ripple",
-    description: "クリック位置から波紋が広がるマテリアルデザイン風エフェクト",
+    title: "Lateral Pass Fill",
+    description: "Passes a diagonal line across, then sweep",
     gradient: "from-starbucks-green to-house-green",
     hoverClass: `
       overflow-hidden
@@ -82,8 +82,8 @@ export const hoverStyles: HoverStyle[] = [
   },
   {
     id: 6,
-    title: "Underline Reveal",
-    description: "テキスト下にアンダーラインがスライドインするエフェクト",
+    title: "Vertical Text Slide",
+    description: "Slides down from the top",
     gradient: "from-green-uplift to-green-accent",
     hoverClass: `
       overflow-hidden
@@ -98,8 +98,8 @@ export const hoverStyles: HoverStyle[] = [
   },
   {
     id: 7,
-    title: "3D Press",
-    description: "ホバーで浮き上がり、クリックで押し込まれる立体的なエフェクト",
+    title: "3D Vertical Text Flip",
+    description: "Rotates down from the top twice with a delay",
     gradient: "from-house-green to-starbucks-green",
     hoverClass: `
       group-hover:before:rotate-x-0 group-hover:after:rotate-x-0
