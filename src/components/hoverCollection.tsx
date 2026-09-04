@@ -1,69 +1,122 @@
-import { type JSX } from "react";
-
-import { Hover1 } from "@/components/Hover1";
-import { Hover2 } from "@/components/Hover2";
-import { Hover3 } from "@/components/Hover3";
-import { Hover4 } from "@/components/Hover4";
-import { Hover5 } from "@/components/Hover5";
-import { Hover6 } from "@/components/Hover6";
-import { Hover7 } from "@/components/Hover7";
-
-export type HoverStyles = {
+export type HoverStyle = {
   id: number;
   title: string;
   description: string;
   gradient: string;
-  preview: JSX.Element;
+  hoverClass: string;
 };
 
-export const hoverStyles: HoverStyles[] = [
+export const hoverStyles: HoverStyle[] = [
   {
     id: 1,
     title: "Fill Slide",
     description: "Fills the background on hover",
     gradient: "from-green-accent to-starbucks-green",
-    preview: <Hover1 />,
+    hoverClass: `
+      overflow-hidden
+      group-hover:before:rotate-0
+      before:content-[''] before:absolute before:left-0 before:top-0
+      before:bg-starbucks-green before:w-full before:h-full before:-z-10
+      before:origin-bottom-left before:-rotate-90
+      before:transition-[rotate] before:duration-300
+    `,
   },
   {
     id: 2,
     title: "Scale Up",
     description: "Fills the background on hover",
     gradient: "from-house-green to-green-uplift",
-    preview: <Hover2 />,
+    hoverClass: `
+      overflow-hidden
+      group-hover:before:translate-x-0
+      before:content-[''] before:absolute before:left-0 before:top-0
+      before:bg-starbucks-green before:w-full before:h-full before:-z-10
+      before:-translate-x-full
+      before:transition-[translate] before:duration-300
+    `,
   },
   {
     id: 3,
     title: "Border Draw",
     description: "ボーダーがアニメーションしながら描画されるエフェクト",
     gradient: "from-green-accent to-green-light",
-    preview: <Hover3 />,
+    hoverClass: `
+      overflow-hidden
+      group-hover:before:rotate-x-0 group-hover:after:rotate-y-0
+      before:content-[''] before:absolute before:left-0 before:top-0
+      before:bg-starbucks-green before:w-full before:h-full before:-z-10
+      before:rotate-x-90 before:transition-all before:duration-700
+      after:content-[''] after:absolute after:left-0 after:top-0
+      after:bg-starbucks-green after:w-full after:h-full after:-z-10
+      after:rotate-y-90 after:transition-all after:duration-700
+    `,
   },
   {
     id: 4,
     title: "Glow Pulse",
     description: "ホバー時にボタンの周囲がやわらかく光るエフェクト",
     gradient: "from-gold to-gold-light",
-    preview: <Hover4 />,
+    hoverClass: `
+      overflow-hidden
+      group-hover:before:rotate-x-0
+      before:content-[''] before:absolute before:left-0 before:top-0
+      before:bg-starbucks-green before:w-full before:h-full before:-z-10
+      before:rotate-x-90 before:transition-all before:duration-700
+    `,
   },
   {
     id: 5,
     title: "Ripple",
     description: "クリック位置から波紋が広がるマテリアルデザイン風エフェクト",
     gradient: "from-starbucks-green to-house-green",
-    preview: <Hover5 />,
+    hoverClass: `
+      overflow-hidden
+      group-hover:before:translate-x-full
+      before:content-[''] before:absolute before:left-0 before:top-0
+      before:bg-starbucks-green before:w-full before:h-full before:-z-10
+      before:-translate-x-full before:rotate-45
+      before:transition-all before:duration-500
+      transition-colors duration-300
+      group-hover:bg-starbucks-green group-hover:delay-500
+    `,
   },
   {
     id: 6,
     title: "Underline Reveal",
     description: "テキスト下にアンダーラインがスライドインするエフェクト",
     gradient: "from-green-uplift to-green-accent",
-    preview: <Hover6 />,
+    hoverClass: `
+      overflow-hidden
+      group-hover:before:translate-y-0
+      before:content-['Hovered'] before::text-starbucks-green
+      before:absolute before:left-0 before:top-0
+      before:bg-starbucks-green before:text-white
+      before:w-full before:h-full
+      before:-translate-y-full before:transition-all before:duration-300
+      before:flex before:justify-center before:items-center
+    `,
   },
   {
     id: 7,
     title: "3D Press",
     description: "ホバーで浮き上がり、クリックで押し込まれる立体的なエフェクト",
     gradient: "from-house-green to-starbucks-green",
-    preview: <Hover7 />,
+    hoverClass: `
+      group-hover:before:rotate-x-0 group-hover:after:rotate-x-0
+      before:content-['Hovered'] before::text-starbucks-green
+      before:absolute before:left-0 before:top-0
+      before:bg-starbucks-green before:text-white
+      before:w-full before:h-full
+      before:rotate-x-270 before:transition-all before:duration-500
+      before:flex before:justify-center before:items-center
+      before:origin-top before:rounded-full
+      after:content-['Hovered']
+      after:absolute after:left-0 after:top-0
+      after:bg-house-green after:text-white
+      after:w-full after:h-full
+      after:rotate-x-270 after:transition-all after:duration-500
+      after:flex after:justify-center after:items-center
+      after:origin-top after:rounded-full after:delay-300
+    `,
   },
 ];
