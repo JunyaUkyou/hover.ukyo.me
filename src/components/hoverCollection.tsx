@@ -23,8 +23,8 @@ export const hoverStyles: HoverStyle[] = [
   },
   {
     id: 2,
-    title: "Scale Up",
-    description: "Fills the background on hover",
+    title: "Lateral Sweep",
+    description: "Sweep from left to right",
     gradient: "from-house-green to-green-uplift",
     hoverClass: `
       overflow-hidden
